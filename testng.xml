@@ -3,7 +3,7 @@
 <suite name="Test Suite" verbose="1">
     <test name="Regression Tests">
         <classes>
-            <class name="com.josdem.selenium.cucumber.steps.TestRunner">
+            <class name="com.josdem.selenium.cucumber.TestRunner">
             </class>
         </classes>
     </test>
