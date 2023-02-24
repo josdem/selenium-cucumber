@@ -10,6 +10,7 @@
 
     <properties>
         <selenium-java-version>4.8.0</selenium-java-version>
+        <testng-version>7.7.1</testng-version>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
@@ -20,6 +21,13 @@
             <artifactId>selenium-java</artifactId>
             <version>${selenium-java-version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng-version}</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
 
