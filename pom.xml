@@ -11,6 +11,7 @@
     <properties>
         <selenium-java-version>4.8.0</selenium-java-version>
         <testng-version>7.7.1</testng-version>
+        <cucumber-version>7.11.1</cucumber-version>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
@@ -25,9 +26,22 @@
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>${testng-version}</version>
-            <scope>test</scope>
         </dependency>
-
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${cucumber-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>${cucumber-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-core</artifactId>
+            <version>${cucumber-version}</version>
+        </dependency>
     </dependencies>
 
 
