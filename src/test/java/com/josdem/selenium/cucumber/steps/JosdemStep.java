@@ -10,7 +10,6 @@ public class JosdemStep {
 
   @Given("^Open josdem website$")
   public void launchWebsite() {
-    System.setProperty("webdriver.chrome.driver", "/home/josdem/chromedriver");
     WebDriver driver = new ChromeDriver();
     driver.get("https://josdem.io");
     driver.manage().window().maximize();
