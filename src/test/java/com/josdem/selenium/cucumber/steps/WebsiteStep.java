@@ -1,20 +1,21 @@
 package com.josdem.selenium.cucumber.steps;
 
+import com.josdem.selenium.cucumber.BaseStep;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 import static org.testng.Assert.assertTrue;
 
-public class WebsiteStep {
+public class WebsiteStep extends BaseStep {
 
-  private WebDriver driver = new ChromeDriver();
+  private WebDriver driver;
   private String title;
 
   @Given("^Website as \"(.*)\"$")
   public void loadingWebsite(String website) {
+    driver = getDriver();
     driver.get(website);
   }
 
