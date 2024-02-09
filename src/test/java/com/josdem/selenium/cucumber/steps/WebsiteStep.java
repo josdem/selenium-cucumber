@@ -1,5 +1,6 @@
 package com.josdem.selenium.cucumber.steps;
 
+import com.josdem.selenium.cucumber.BaseTest;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -9,20 +10,14 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import static org.testng.Assert.assertTrue;
 
-public class WebsiteStep {
+public class WebsiteStep extends BaseTest {
 
   private WebDriver driver;
   private String title;
 
-  public WebsiteStep() {
-    System.setProperty("webdriver.http.factory", "jdk-http-client");
-    ChromeOptions options = new ChromeOptions();
-    options.addArguments("--remote-allow-origins=*");
-    driver = new ChromeDriver(options);
-  }
-
   @Given("^Website as \"(.*)\"$")
   public void loadingWebsite(String website) {
+    driver = getDriver();
     driver.get(website);
   }
 
