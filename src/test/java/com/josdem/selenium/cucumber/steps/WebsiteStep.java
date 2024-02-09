@@ -1,16 +1,14 @@
 package com.josdem.selenium.cucumber.steps;
 
-import com.josdem.selenium.cucumber.BaseTest;
+import com.josdem.selenium.cucumber.BaseStep;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 
 import static org.testng.Assert.assertTrue;
 
-public class WebsiteStep extends BaseTest {
+public class WebsiteStep extends BaseStep {
 
   private WebDriver driver;
   private String title;
